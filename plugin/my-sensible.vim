@@ -1,14 +1,14 @@
 " ============================================================================
-" File:        my-vim-sensible.vim
+" File:        my-sensible.vim
 " Description: default global vim settings
 " Maintainer:  Javier Lopez <m@javier.io>
 " ============================================================================
 
-if exists('g:loaded_my_vim_sensible') || &cp
-  finish
-endif
+"if exists('g:loaded_my_sensible_vim') || &cp
+  "finish
+"endif
 
-let g:loaded_my_vim_sensible = 1
+"let g:loaded_my_sensible_vim = 1
 
 if v:version < 700
     echoerr "This vimrc file use features than are only available on vim 7.0 or greater"

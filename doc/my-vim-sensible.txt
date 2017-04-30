@@ -1,4 +1,4 @@
-*my-vim-sensible*                                             My global defaults
+*my-sensible.vim*                                             My global defaults
 
 ==============================================================================
 CONTENTS                                                 *MyVimSensibleContents*
@@ -14,7 +14,7 @@ CONTENTS                                                 *MyVimSensibleContents*
 ==============================================================================
 INTRO                                                       *MyVimSensibleIntro*
 
-my-vim-sensible is a global plugin who set preferences according to they way I
+my-sensible.vim is a global plugin who set preferences according to they way I
 use [vim](http://vim.org). It sets highly opinionated settings. Probably not
 something you would like to use straight ahead.
 
@@ -23,7 +23,7 @@ USAGE                                                       *MyVimSensibleUsage*
 
 Add. >
 
-        Bundle 'chilicuil/my-vim-sensible'
+        Bundle 'chilicuil/my-sensible.vim'
 <
 To your $VIMRC file and run inside of vim: >
 
@@ -41,7 +41,7 @@ BUGS                                                         *MyVimSensibleBugs*
 
 If you find a bug please post it on the issue tracker:
 
-    https://github.com/chilicuil/my-vim-sensible/issues
+    https://github.com/chilicuil/my-sensible.vim/issues
 
 ==============================================================================
 CONTRIBUTING                                         *MyVimSensibleContributing*
@@ -51,7 +51,7 @@ It does everything I need, if you use it and require something else, the best
 way to get it is to fork the repository, if you feel especially charitable,
 feel free to send your changes.
 
-GitHub: http://github.com/chilicuil/my-vim-sensible/
+GitHub: http://github.com/chilicuil/my-sensible.vim/
 
 ==============================================================================
 CHANGELOG                                               *MyVimSensibleChangelog*
