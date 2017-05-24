@@ -23,7 +23,7 @@ USAGE                                                       *MyVimSensibleUsage*
 
 Add. >
 
-        Bundle 'chilicuil/my-sensible.vim'
+        Bundle 'javier-lopez/my-sensible.vim'
 <
 To your $VIMRC file and run inside of vim: >
 
@@ -41,7 +41,7 @@ BUGS                                                         *MyVimSensibleBugs*
 
 If you find a bug please post it on the issue tracker:
 
-    https://github.com/chilicuil/my-sensible.vim/issues
+    https://github.com/javier-lopez/my-sensible.vim/issues
 
 ==============================================================================
 CONTRIBUTING                                         *MyVimSensibleContributing*
@@ -51,7 +51,7 @@ It does everything I need, if you use it and require something else, the best
 way to get it is to fork the repository, if you feel especially charitable,
 feel free to send your changes.
 
-GitHub: http://github.com/chilicuil/my-sensible.vim/
+GitHub: http://github.com/javier-lopez/my-sensible.vim/
 
 ==============================================================================
 CHANGELOG                                               *MyVimSensibleChangelog*
