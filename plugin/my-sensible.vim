@@ -45,8 +45,12 @@ set report=0          "report any changes
 set nobackup          "git btw!
 set nowritebackup     "bye .swp madness
 set noswapfile
-"set undofile          "persist the undo tree to a file
-"set undodir='~/.vim/undo/'
+set undofile          "persist the undo tree to a file
+if has('win32') || has('win64')
+    set undodir=$VIM/vimfiles/undo
+else
+    set undodir=~/.vim/undo
+endif
 set tabpagemax=1000   "max open tabs at the same time
 set autowrite
 set autoread          "watch file changes by other programs
