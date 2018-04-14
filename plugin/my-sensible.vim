@@ -51,6 +51,7 @@ if has('win32') || has('win64')
 else
     set undodir=~/.vim/undo
 endif
+if !isdirectory(&undodir) | call mkdir(&undodir) | endif
 set tabpagemax=1000   "max open tabs at the same time
 set autowrite
 set autoread          "watch file changes by other programs
