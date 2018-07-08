@@ -100,7 +100,16 @@ set foldenable!       "disable folding by default
 "yanks go to clipboard, "+p to recover, only works on X11
 if has ('unnamedplus') | set clipboard=unnamedplus | endif
 
-set viminfo='100,<100,s10,h    "remember just a little
+set viminfo=%,<1000,'1000,/1000,:1000,s1000,h
+"           | |     |     |     |     |     |
+"           | |     |     |     |     |     + file marks 0-9,A-Z 0=NOT stored
+"           | |     |     |     |     + disable 'hlsearch' loading viminfo
+"           | |     |     |     + command-line history saved
+"           | |     |     + search history saved
+"           | |     + files marks saved
+"           | + lines saved per register (old name for <, vi6.2)
+"           + save/restore buffer list
+
 set backspace=indent,eol,start "backspace deletes as in other editors
 set pastetoggle=<c-insert>     "pastetoggle, sane indentation on pastes
                                "doesn't work in most terminal emulators
