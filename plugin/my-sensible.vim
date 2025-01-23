@@ -88,8 +88,10 @@ set nofsync           "improves performance, let OS decide when to flush disk
 set showmatch         "show matching bracket
 "set matchtime=5      "how many tenths of a second to blink
 set diffopt+=iwhite   "ignore whitespace in diff mode
-set cscopetag         "use both cscope and ctag for 'ctrl-]'
-set csto=0            "gives preference to cscope over ctag
+if !has('nvim')       "options not available in nvim
+  set cscopetag         "use both cscope and ctag for 'ctrl-]'
+  set csto=0            "gives preference to cscope over ctag
+endif
 "set mousehide        "hide the mouse while typying
 "set mouse=nv         "set the mouse to work in console mode
 set foldenable!       "disable folding by default
