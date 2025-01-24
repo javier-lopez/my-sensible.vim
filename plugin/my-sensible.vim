@@ -46,10 +46,12 @@ set nobackup          "git btw!
 set nowritebackup     "bye .swp madness
 set noswapfile
 set undofile          "persist the undo tree to a file
-if has('win32') || has('win64')
+if !has('nvim'):
+  if has('win32') || has('win64')
     set undodir=$VIM/vimfiles/undo
-else
+  else
     set undodir=~/.vim/undo
+  endif
 endif
 if !isdirectory(&undodir) | call mkdir(&undodir) | endif
 set tabpagemax=1000   "max open tabs at the same time
