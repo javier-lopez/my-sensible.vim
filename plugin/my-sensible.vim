@@ -46,6 +46,8 @@ set nobackup          "git btw!
 set nowritebackup     "bye .swp madness
 set noswapfile
 set undofile          "persist the undo tree to a file
+set number
+
 if !has('nvim')
   if has('win32') || has('win64')
     set undodir=$VIM/vimfiles/undo
