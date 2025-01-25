@@ -58,7 +58,6 @@ set tabpagemax=1000   "max open tabs at the same time
 set autowrite
 set autoread          "watch file changes by other programs
 set encoding=utf-8    "utf is able to represent any character
-set fileencoding=utf-8
 set ruler             "show the cursor position all the time
 set noerrorbells      "disable annoying beeps
 set path+=**          "search through subdirectories
