@@ -116,9 +116,13 @@ set viminfo=%,<1000,'1000,/1000,:1000,s1000,h
 "           + save/restore buffer list
 
 set backspace=indent,eol,start "backspace deletes as in other editors
-set pastetoggle=<c-insert>     "pastetoggle, sane indentation on pastes
-                               "doesn't work in most terminal emulators
-                               ":set paste/nopaste are friends there
+
+if !has('nvim')
+  set pastetoggle=<c-insert>   " pastetoggle, sane indentation on pastes (Vim only)
+                               " doesn't work in most terminal emulators
+                               " :set paste/nopaste are friends there
+endif
+
 "print to html
 let html_use_css       = 1
 let html_dynamic_folds = 1
